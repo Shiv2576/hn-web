@@ -40,6 +40,11 @@ export default function HeroSection() {
                 <span className="text-nowrap">View Demo</span>
               </Link>
             </Button>
+            <Button asChild variant="ghost">
+              <Link href="https://github.com/Shiv2576/hn-web.git">
+                <Icon icon={siGithub} className="h-6 w-6 text-[#181717]" />
+              </Link>
+            </Button>
           </div>
         </div>
 
@@ -94,7 +99,6 @@ export default function HeroSection() {
             >
               Built by shivdx
             </a>
-            <Icon icon={siGithub} className="h-6 w-6 text-[#181717]" />
           </div>
         </div>
       </div>
