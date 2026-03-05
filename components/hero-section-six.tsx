@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -12,6 +11,7 @@ import siCoinbase from "@iconify/icons-simple-icons/coinbase";
 import siReddit from "@iconify/icons-simple-icons/reddit";
 import siYcombinator from "@iconify/icons-simple-icons/ycombinator";
 import siGithub from "@iconify/icons-simple-icons/github";
+import { Download } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -31,9 +31,14 @@ export default function HeroSection() {
 
           <div className="flex flex-col items-center gap-2 *:w-full sm:flex-row sm:*:w-auto">
             <Button asChild variant="ghost">
-              <Link href="#link">
-                <span className="text-nowrap">Download Apk</span>
-              </Link>
+              <a
+                href="/HackerNews.apk"
+                download
+                className="flex items-center gap-2"
+              >
+                <Download className="h-4 w-4" />
+                Download APK
+              </a>
             </Button>
             <Button asChild variant="ghost">
               <Link href="#link">
