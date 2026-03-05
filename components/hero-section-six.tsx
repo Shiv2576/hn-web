@@ -11,7 +11,7 @@ import siCoinbase from "@iconify/icons-simple-icons/coinbase";
 import siReddit from "@iconify/icons-simple-icons/reddit";
 import siYcombinator from "@iconify/icons-simple-icons/ycombinator";
 import siGithub from "@iconify/icons-simple-icons/github";
-import { Download } from "lucide-react";
+import { Download, ExternalLink } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -32,12 +32,14 @@ export default function HeroSection() {
           <div className="flex flex-col items-center gap-2 *:w-full sm:flex-row sm:*:w-auto">
             <Button asChild variant="ghost">
               <a
-                href="/HackerNews.apk"
-                download
+                href="https://www.mediafire.com/file/2o5qjydtm5mc3zv/HackerNews.apk/file"
+                target="_blank" // Opens in new tab
+                rel="noopener noreferrer" // Security best practice
                 className="flex items-center gap-2"
               >
                 <Download className="h-4 w-4" />
-                Download APK
+                Download APK from MediaFire
+                <ExternalLink className="h-3 w-3 opacity-70" />
               </a>
             </Button>
             <Button asChild variant="ghost">
