@@ -43,7 +43,7 @@ export default function HeroSection() {
               </a>
             </Button>
             <Button asChild variant="ghost">
-              <Link href="#link">
+              <Link href="https://res.cloudinary.com/drlckonat/video/upload/v1772793797/VIDEO-2026-03-06-16-06-03_fqfjhv.mp4">
                 <span className="text-nowrap">View Demo</span>
               </Link>
             </Button>
